@@ -63,6 +63,7 @@ jQuery(document).ready(function($) {
 			}
 		})
 
+<<<<<<< HEAD
 		var syncMobileMenuState = function(isOpen) {
 			$('body').toggleClass('offcanvas-menu', isOpen);
 			$('.site-menu-toggle').toggleClass('active', isOpen).attr('aria-expanded', isOpen ? 'true' : 'false');
@@ -80,13 +81,31 @@ jQuery(document).ready(function($) {
 		$('body').on('click', '.site-mobile-menu .site-nav-wrap a', function() {
 			syncMobileMenuState(false);
 		}); 
+=======
+		$('body').on('click', '.js-menu-toggle', function(e) {
+			var $this = $(this);
+			e.preventDefault();
+
+			if ( $('body').hasClass('offcanvas-menu') ) {
+				$('body').removeClass('offcanvas-menu');
+				$this.removeClass('active');
+			} else {
+				$('body').addClass('offcanvas-menu');
+				$this.addClass('active');
+			}
+		}) 
+>>>>>>> d2622bf8e272c083c4c98377b21700ef4c283282
 
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
 	    var container = $(".site-mobile-menu");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 	      if ( $('body').hasClass('offcanvas-menu') ) {
+<<<<<<< HEAD
 					syncMobileMenuState(false);
+=======
+					$('body').removeClass('offcanvas-menu');
+>>>>>>> d2622bf8e272c083c4c98377b21700ef4c283282
 				}
 	    }
 		});

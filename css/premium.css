@@ -66,6 +66,7 @@ html{scroll-padding-top:82px}body{max-width:100%;overflow-x:hidden}.site-wrap{wi
 @media(max-width:991.98px){.team-showcase-section{padding:56px 0}.team-collage{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;gap:12px}.team-collage-card,.team-collage-card img{min-height:230px}.team-name-overlay{padding:32px 10px 11px}.team-name-overlay h3{font-size:15px}}
 @media(max-width:575.98px){.team-showcase-section{padding:42px 0}.team-showcase-heading{margin-bottom:22px}.team-showcase-heading p{font-size:15px}.team-heading-mark{font-size:23px}.team-collage{grid-template-columns:minmax(0,1fr);gap:14px}.team-collage-featured{grid-row:auto;grid-column:auto;min-height:0}.team-collage-card{min-height:0;aspect-ratio:4/3}.team-collage-card img,.team-collage-featured img{height:100%;min-height:0;object-fit:contain}.team-name-overlay h3{font-size:17px}.team-name-overlay{padding:40px 14px 13px}}
 @media(prefers-reduced-motion:reduce){.team-collage-card,.team-collage-card img{transition:none}}
+<<<<<<< HEAD
 
 /* Requested focused fixes: mobile menu close toggle, clearer logo, trademark judgement image fill */
 .site-logo img{width:220px!important;height:82px!important;object-fit:contain}
@@ -224,3 +225,5 @@ html{scroll-padding-top:82px}body{max-width:100%;overflow-x:hidden}.site-wrap{wi
     height: 48px !important;
   }
 }
+=======
+>>>>>>> d2622bf8e272c083c4c98377b21700ef4c283282
